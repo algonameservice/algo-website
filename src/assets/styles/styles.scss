@@ -1,0 +1,95 @@
+$text-color: #ffc200;
+$light-text: white;
+$grey: #808080;
+$blue: #2D8CFF;
+$black: black;
+
+p {
+    font-size: 16px;
+}
+
+.banner {
+    height: 150px;
+    background-color: $text-color;
+}
+
+.heading {
+    font-weight: bold;
+    color: $text-color;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.section {
+    font-size: 14px;
+}
+
+.gap-top {
+    margin-top: 10px;
+}
+
+.profile-link {
+    margin-left: 10px;
+    font-size: 20px;
+    display: inline;
+    text-decoration: underline;
+    color: $blue;
+    cursor: pointer;
+}
+
+.fa-icon {
+    cursor: pointer;
+}
+
+.link-icon {
+    min-width: 30px;
+    font-size: 20px;
+    color: $text-color;
+}
+
+.text-light {
+    color: $light-text;
+}
+
+.text-grey {
+    color: $grey;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.container-class {
+    margin-top: 5%;
+}
+
+.description {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.card-bg {
+    background-color: $black;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.5px solid $grey;
+    margin-top: 10%;
+    cursor: pointer;
+    &:hover{
+        border: 0.5px solid $text-color;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+    &:hover {
+        color: $text-color;
+    }
+
+}

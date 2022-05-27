@@ -1,0 +1,91 @@
+p {
+  font-size: 16px;
+}
+
+.banner {
+  height: 150px;
+  background-color: #ffc200;
+}
+
+.heading {
+  font-weight: bold;
+  color: #ffc200;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.section {
+  font-size: 14px;
+}
+
+.gap-top {
+  margin-top: 10px;
+}
+
+.profile-link {
+  margin-left: 10px;
+  font-size: 20px;
+  display: inline;
+  text-decoration: underline;
+  color: #2D8CFF;
+  cursor: pointer;
+}
+
+.fa-icon {
+  cursor: pointer;
+}
+
+.link-icon {
+  min-width: 30px;
+  font-size: 20px;
+  color: #ffc200;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-grey {
+  color: #808080;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.container-class {
+  margin-top: 5%;
+}
+
+.description {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.card-bg {
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0.5px solid #808080;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.card-bg:hover {
+  border: 0.5px solid #ffc200;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  color: #ffc200;
+}
+/*# sourceMappingURL=styles.css.map */

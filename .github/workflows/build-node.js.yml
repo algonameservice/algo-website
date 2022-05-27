@@ -1,0 +1,40 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Build and Deploy to skynet
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-deploy-skynet:
+
+    runs-on: ubuntu-latest
+
+    outputs:
+      skylink: ${{ steps.step4.outputs.skylink }}
+    
+    steps:
+
+    - uses: actions/checkout@v3
+    - name: Use Node.js 16.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+        cache: 'yarn'
+
+    - run: yarn install --frozen-lockfile
+    - run: yarn build --if-present
+  
+    - name: Deploy to Skynet
+      uses: SkynetLabs/deploy-to-skynet-action@v2
+      with:
+        upload-dir: build
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        registry-seed: ${{ secrets.SKYNET_REGISTRY_SEED || '' }}
+        skynet-api-key: ${{ secrets.SKYNET_API_KEY }}
+        registry-datakey: algo.website
+        portal-url: https://fileportal.org
