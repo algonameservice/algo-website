@@ -37,4 +37,4 @@ jobs:
         registry-seed: ${{ secrets.SKYNET_REGISTRY_SEED || '' }}
         skynet-api-key: ${{ secrets.SKYNET_API_KEY }}
         registry-datakey: algo.website
-        portal-url: https://fileportal.org
+        portal-url: https://web3portal.com

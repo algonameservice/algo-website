@@ -138,7 +138,7 @@ export default function Profile({domain ,info}) {
             {!loading && !found ? 
             <div>
                 <FontAwesomeIcon size="4x" className="heading" icon={faTriangleExclamation} />
-                <p className="text-light">Domain not registered yet. Click <a href="https://algonameservice.com/register" rel="noreferrer" target="_blank">here</a> to register this domain</p>
+                <p className="text-light">Domain not registered yet. Click <a href="https://algonameservice.com/#/register" rel="noreferrer" target="_blank">here</a> to register this domain</p>
             </div> : <></> }
             
         </Container>
