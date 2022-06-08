@@ -1,12 +1,12 @@
 import algosdk from "algosdk";
 import { ANS } from "@algonameservice/sdk/src";
 
-const client = new algosdk.Algodv2({ 'X-API-KEY': process.env.REACT_APP_PURESTAKE_API_KEY },
-            process.env.REACT_APP_PURESTAKE_MAINNET_CLIENT_URL,
+const client = new algosdk.Algodv2('',
+            'https://mainnet-api.algonode.cloud',
             '');
 
-const indexer = new algosdk.Indexer({ 'X-API-KEY': process.env.REACT_APP_PURESTAKE_API_KEY },
-            process.env.REACT_APP_PURESTAKE_MAINNET_INDEXER_URL,
+const indexer = new algosdk.Indexer('',
+            'https://mainnet-idx.algonode.cloud',
             '');
 
 const sdk = new ANS(client, indexer);

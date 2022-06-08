@@ -123,7 +123,7 @@ export default function Profile({domain ,info}) {
                         <iframe 
                             style={{width:'100%', height:'90vh', marginTop:'2%'}} 
                             title="ANS IFrames" 
-                            src={currentComponent === 'collection' ? `https://randgallery.com/algo-collection?address=${domain}.algo` : `https://asastats.com/${domain}.algo`}></iframe>
+                            src={currentComponent === 'collection' ? `https://randgallery.com/algo-collection?address=${domain}.algo` : `https://asastats.com/${domain}.algo/ans`}></iframe>
                         
                     </Col>
                 </Row>
