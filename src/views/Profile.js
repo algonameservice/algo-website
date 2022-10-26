@@ -24,8 +24,8 @@ export default function Profile({domain ,info}) {
     const [avatar, setAvatar] = React.useState('');
     const [loading, setLoading] = React.useState(true);
     const [found, setFound] = React.useState(false);
-    const [collectionClass, setCollectionClass] = React.useState('heading');
-    const [portfolioClass, setPortfolioClass] = React.useState('text-grey');
+    //const [collectionClass, setCollectionClass] = React.useState('heading');
+    const [portfolioClass, setPortfolioClass] = React.useState('heading');
     const [currentComponent, setCurrentComponent] = React.useState('portfolio');
 
     React.useEffect(() => {
@@ -65,6 +65,7 @@ export default function Profile({domain ,info}) {
         }
     }
 
+    /*
     const updateComponent = (component) => {
         if(component === 'COLLECTION') {
             setCollectionClass('heading');
@@ -79,6 +80,7 @@ export default function Profile({domain ,info}) {
             return;
         }
     }
+    */
 
     return(
         <Container>
@@ -113,7 +115,7 @@ export default function Profile({domain ,info}) {
                     <Col xs={12} style={{minHeight:'100vh'}}>
                         
                         <h3 
-                            onClick={() => updateComponent('PORTFOLIO')}
+                            //onClick={() => updateComponent('PORTFOLIO')}
                             className={`${portfolioClass} pointer`}
                             style={{display:'inline', marginLeft:'2%'}}>ASSET PORTFOLIO</h3> <br />
                         
