@@ -26,7 +26,7 @@ export default function Profile({domain ,info}) {
     const [found, setFound] = React.useState(false);
     const [collectionClass, setCollectionClass] = React.useState('heading');
     const [portfolioClass, setPortfolioClass] = React.useState('text-grey');
-    const [currentComponent, setCurrentComponent] = React.useState('collection');
+    const [currentComponent, setCurrentComponent] = React.useState('portfolio');
 
     React.useEffect(() => {
         if(info.found) {
@@ -111,10 +111,7 @@ export default function Profile({domain ,info}) {
                 <hr />
                 <Row className="text-left section">
                     <Col xs={12} style={{minHeight:'100vh'}}>
-                        <h3 
-                            onClick={() => updateComponent('COLLECTION')}
-                            className={`${collectionClass} pointer`}
-                            style={{display:'inline'}}>NFTs</h3>
+                        
                         <h3 
                             onClick={() => updateComponent('PORTFOLIO')}
                             className={`${portfolioClass} pointer`}

@@ -42,8 +42,6 @@ export default function Home(props) {
                 <p className="description">
                     You can setup/update information, such as your content, addresses, and text records on <a href="https://algonameservice.com" target="_blank" rel="noreferrer">ANS Website</a>.
                 </p>
-                <h4 className="heading">What is the source of the NFTs?</h4>
-                <p>For each .algo name, the NFTs displayed are directly through iframes from <a href="https://randgallery.com" target="_blank" rel="noreferrer">Rand Gallery</a>.</p>
 
                 <h4 className="heading">What is the source of the Asset Portfolio</h4>
                 <p>For each .algo name, the asset portfolio is displayed directly through iframes from <a href="https://asastats.com" target="_blank" rel="noreferrer">ASA Stats</a>.</p>
