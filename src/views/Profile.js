@@ -25,8 +25,8 @@ export default function Profile({domain ,info}) {
     const [loading, setLoading] = React.useState(true);
     const [found, setFound] = React.useState(false);
     //const [collectionClass, setCollectionClass] = React.useState('heading');
-    const [portfolioClass, setPortfolioClass] = React.useState('heading');
-    const [currentComponent, setCurrentComponent] = React.useState('portfolio');
+    //const [portfolioClass, setPortfolioClass] = React.useState('heading');
+    //const [currentComponent, setCurrentComponent] = React.useState('portfolio');
 
     React.useEffect(() => {
         if(info.found) {
@@ -116,13 +116,13 @@ export default function Profile({domain ,info}) {
                         
                         <h3 
                             //onClick={() => updateComponent('PORTFOLIO')}
-                            className={`${portfolioClass} pointer`}
+                            className={`heading pointer`}
                             style={{display:'inline', marginLeft:'2%'}}>ASSET PORTFOLIO</h3> <br />
                         
                         <iframe 
                             style={{width:'100%', height:'90vh', marginTop:'2%'}} 
                             title="ANS IFrames" 
-                            src={currentComponent === 'collection' ? `https://randgallery.com/algo-collection?address=${domain}.algo` : `https://asastats.com/${domain}.algo/ans`}></iframe>
+                            src={`https://asastats.com/${domain}.algo/ans`}></iframe>
                         
                     </Col>
                 </Row>
